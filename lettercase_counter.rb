@@ -1,3 +1,4 @@
+
 def letter_case_count(str)
   case_count = {lowercase: 0, uppercase: 0, neither: 0}
   str.chars.each do |char|
