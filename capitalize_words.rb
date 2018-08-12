@@ -1,9 +1,7 @@
-def word_cap(str)
+ def word_cap(str)
   str = str.split(' ')
-  str.each { |word| word[0] = word[0].upcase! if word[0] =~ /[[:alpha:]]/ }
+  str.each { |word| word[0] = word[0].upcase! if word[0] =~ /[[:alpha:]]/ }.join(' ')
+end 
 
-  str.join(' ')  
-end
-  
 puts word_cap('this is a "quoted" word')
 puts word_cap('the javaScript language')
